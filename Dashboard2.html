@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Sweetalert2 -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- Owl carousal -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="stylesheet/dashboard.css">
+<link rel="stylesheet" href="stylesheet/style.css">    
+<title>Dashboard</title>
+</head>
+<style>
+    .rightsform{
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    .dashboardcard{
+        box-shadow: 13px 13px 13px 1px rgba(0,0,0,0.75);
+    }
+</style>
+<body style="background-image: url('images/CustomerLoginbody.jpg');">
+    <!-- navabar starts here -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid navcontainer">
+      <a class="navbar-brand" href="#">
+        <img src="images/MaxHealthLogo.png" alt="MaxHealthLogo" class="Maxhealthlogo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="Adminlogin.php"><label for="" class="homelink">LOGOUT</label></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- admin rights  -->
+    <div class="rightsform p-2 pb-5 mt-5 bg-light" style="width: 100%;">
+        <h3  class="text-center" style="color: #00a6a6;font-weight: bold;font-family: cursive;font-size: 30px;">DashBoard</h3>
+        <div class="owl-carousel owl-theme car mt-2">
+            <!-- card 1 -->
+            <div>
+                <div class="card dashboardcard" style="width:400px">
+                    <img class="card-img-top img-fluid" src="images/DashboardCustomer.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Customer information</h4>
+                      <p class="card-text">Check Your Customer information Here!</p>
+                      <a href="CustomerInformation.php" class="btn btn-primary w-100" style="background-color: #00a6a6;border: none;font-size: 21px;">Check</a>
+                    </div>
+                </div>
+            </div>
+            <!-- card2 -->
+            <div>
+                    <div class="card dashboardcard" style="width:400px">
+                        <img class="card-img-top img-fluid" src="images/DashboardEquipment.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Add Equipments</h4>
+                          <p class="card-text">Add your Gym Equipments Here!</p>
+                          <a href="AddEquipment.php" class="btn btn-primary w-100" style="background-color: #00a6a6;border: none;font-size: 21px;">Add Equipments</a>
+                        </div>
+                    </div>
+                
+            </div>
+            <!-- card3 -->
+            <div> 
+                    <div class="card dashboardcard" style="width:400px">
+                        <img class="card-img-top img-fluid" src="images/Treadmill.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Add Packages</h4>
+                          <p class="card-text">Add Your Gym Packages Here!</p>
+                          <a href="AddPackagelist.php" class="btn btn-primary w-100" style="background-color: #00a6a6;border: none;font-size: 21px;">Add Packages</a>
+                        </div>
+                    </div> 
+            </div>
+            <!-- card4 -->
+            <div>
+                    <div class="card dashboardcard" style="width:400px">
+                        <img class="card-img-top img-fluid" src="images/DashboardBilling.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Billing List Report</h4>
+                          <p class="card-text">Check Your Customer Bill!</p>
+                          <a href="" class="btn btn-primary w-100" style="background-color: #00a6a6;border: none;font-size: 21px;">Check Bills</a>
+                        </div>
+                    </div>
+            </div>
+            <!-- card5 -->
+            <div>
+                    <div class="card dashboardcard" style="width:400px">
+                        <img class="card-img-top img-fluid" src="images/DashboardEnquiry .jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                          <h4 class="card-title">Enquiry List Report</h4>
+                          <p class="card-text">Check Peoples Enquiries</p>
+                          <a href="EnquiryList.php" class="btn btn-primary w-100" style="background-color: #00a6a6;border: none;font-size: 21px;">Check Enquiries</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap script -->
+  <script src="lib/Bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- JQuery -->
+  <script src="lib/Jquery/jquery.min.js"></script>
+  <!-- owlcarosal scripts -->
+  <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:false,
+    stagepadding:50,
+    margin:70,
+    dotted:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1300:{
+            items:3
+        },
+        1500:{
+            items:3
+        },
+        1600:{
+            items:4
+        },
+        2000:{
+            items:4
+        }
+    }
+})
+  </script>
+  <script>
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Welcome ADMIN',
+      showConfirmButton: false,
+      timer: 2500
+    })
+  </script>
+</body>
+</html>
